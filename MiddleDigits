@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class MiddleDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a 4-digit number: ");
+        int num = sc.nextInt();
+
+        int middle = (num / 10) % 100;
+        System.out.println("Middle Digits: " + middle);
+        sc.close();
+    }
+}
