@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class DigitExtraction {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a 3-digit number: ");
+        int num = sc.nextInt();
+
+        int unitDigit = num % 10;
+        int hundredthDigit = (num / 100) % 10;
+
+        System.out.println("Unit Digit: " + unitDigit);
+        System.out.println("100th Digit: " + hundredthDigit);
+        sc.close();
+    }
+}
