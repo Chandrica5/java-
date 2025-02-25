@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class FractionSum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first decimal number: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Enter second decimal number: ");
+        double num2 = sc.nextDouble();
+
+        double fraction1 = num1 - (int) num1;
+        double fraction2 = num2 - (int) num2;
+        double sum = fraction1 + fraction2;
+
+        System.out.println("Sum of fractional parts: " + sum);
+        sc.close();
+    }
+}
